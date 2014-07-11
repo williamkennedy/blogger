@@ -35,5 +35,8 @@ end
     
     redirect_to articles_index_path
   end
+  def edit
+    @article = Article.new(article_params)
+  end
   
 end
