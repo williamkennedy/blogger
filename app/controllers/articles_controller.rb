@@ -41,7 +41,7 @@ end
     
     flash.notice = "Article '#{@article.title}' Deleted!"#adding update message
     
-    redirect_to articles_index_path
+    redirect_to article_path(@article)
   end
   def edit
     @article = Article.find(params[:id])#finding article by id
