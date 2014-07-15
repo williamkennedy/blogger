@@ -7,10 +7,15 @@ end
   
   def show
   @article = Article.find(params[:id])
+    
+  @comment = Comment.new
+    @comment.article_id = @article.id #adding comments view
 end
   
   def new
   @article = Article.new
+    
+    
 end
   ##This method was the original create method
   #def create
