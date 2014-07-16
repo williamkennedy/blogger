@@ -1,0 +1,12 @@
+<p>
+  Tags:
+ <ul id="tags">
+  <% @tag.each do |tag| %>
+    <li>
+    <%= link_to tag.name, tag_path(tag) %>
+  <% end %>
+</p>
+<%= link_to "Create a New Tag", new_article_path, class: "new_tag" %>
+
+
+
